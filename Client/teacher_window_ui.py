@@ -407,10 +407,9 @@ def teacher_window(user, previous_window=None):
         command=lambda: classes_window(window)
     )
     btn_classes.pack()
-
     fade_in(window)
     window.mainloop()
 
 if __name__ == "__main__":
-
     teacher_window({'name': 'Professor'})
+

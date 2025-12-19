@@ -3,7 +3,7 @@ from PIL import Image
 from tkinter import messagebox
 import requests
 
-MACHINE_B_URL = "http://192.168.56.3:5000"
+MACHINE_B_URL = "http://localhost:5000"
 
 def fade_in(window, step=0.05, delay=10):
     if not window.winfo_exists():
@@ -412,4 +412,5 @@ def teacher_window(user, previous_window=None):
     window.mainloop()
 
 if __name__ == "__main__":
+
     teacher_window({'name': 'Professor'})

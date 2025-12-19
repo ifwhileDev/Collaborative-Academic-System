@@ -71,7 +71,7 @@ def login_window():
                     student_window(user)
                 return
 
-        print("❌ Falha no Login")
+        print("Falha no Login")
         alert(text='Verifique as informações de login e tente novamente.', title='ERRO', button='OK')
 
     window.bind("<Escape>", lambda event: window.attributes("-fullscreen", False))
@@ -79,3 +79,4 @@ def login_window():
 
 if __name__ == "__main__":
     login_window()
+
